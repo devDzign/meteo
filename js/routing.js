@@ -30,7 +30,7 @@ app.config(function ($stateProvider) {
             .state('weather',
             {
                 cache: cacheActive,
-                url: '/weather',
+                url: '/weather/:city',
                 templateUrl: 'js/views/weather/weather.html',
                 controller: 'weather'
 

@@ -10,7 +10,7 @@ var app = angular.module('meteo', ['ionic']).run(function ($ionicPlatform, $loca
                     StatusBar.styleDefault();
                 }
 
-                $location.path('/weather');
+                $location.path('/');
             }
         );
     }

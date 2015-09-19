@@ -6,9 +6,7 @@
 app
     .controller('weather', function($ionicLoading, $scope, $stateParams, $http){
 
-    //var url = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + $stateParams.city + "&mode=json&units=metric&cnt=10"
-    var ss = 'seddouk';
-    var url = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + ss + "&mode=json&units=metric&cnt=10";
+    var url = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + $stateParams.city + "&mode=json&units=metric&cnt=10";
     $ionicLoading.show({
       template: 'Chargement...'
     });
